@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="X-UA-Compatible" content="IE=edge">
+    <meta name="author" content="HeilantG , gongtongwei@gmail.com">
+    <title>Dong的博客</title>
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <meta content="black" name="apple-mobile-web-app-status-bar-style">
+    <meta content="telephone=no" name="format-detection">
+    <meta name="renderer" content="webkit">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/blog_basic.css">
+    <link rel="stylesheet" href="/css/font-awesome.min.css">
+    <link rel="alternate" type="application/atom+xml" title="ATOM 1.0" href="/atom.xml">
+    <!-- <link rel="icon" href="./images/favicon.ico" type="image/x-icon" />-->
+    <link rel="icon" href="/images/favicon.ico" type="image/x-icon">
+    <script src="/js/jquery.js"></script>
+    <meta name="generator" content="Hexo 5.2.0">
+</head>
+
+<body>
+    <!-- 左侧菜单栏 -->
+    <div class="sidebar animated fadeInDown">
+        <!-- 菜单栏顶部，logo部分 -->
+        <div class="logo-title">
+            <div class="title"><img src="/images/logo@2x.png" style="width:127px;">
+                <!-- title -->
+                <h3 title=""><a href="/">DONG</a></h3>
+                <!-- description -->
+                <div class="description">
+                    <p><b>人若志趣不远，心不在焉，虽学不成。</b></p>
+                </div>
+            </div>
+        </div>
+        <ul class="social-links">
+            <li><a target="_blank" rel="noopener" href="https://github.com/dong-8080"><i class="fa fa-github"></i></a>
+            </li>
+            <li><a href="mailto://dong1024mail@163.com"><i class="fa fa-envelope"></i></a></li>
+        </ul>
+        <!-- 菜单栏底部 感觉没用 -->
+        <!-- <div class="footer">
+            <div class="p"> <span>© 2018 - 2020 </span><i class="fa fa-star"></i><span> HeilantG ,
+                    gongtongwei@gmail.com</span></div>
+            <div class="by_farbox"><span>Powered by </span><a href="https://hexo.io/zh-cn/" target="_blank">Hexo
+                </a><span> & </span><a href="https://github.com/mrcore/hexo-theme-Anatole-Core"
+                    target="_blank">Anatole-Core </a></div>
+            <div class="beian"><span>陕ICP备20005123号</span><span style="height:10px;margin-left: 10px;"></span></div>
+        </div> -->
+    </div>
+    <!-- 页面主题部分 -->
+    <div class="main">
+        <div class="page-top animated fadeInDown">
+            <div class="nav">
+                <li><a href="/">首页</a></li>
+                <li><a href="/archives">归档</a></li>
+                <li><a class="current" href="/about">关于</a></li>
+                <li><a href="/guestbook">留言</a></li>
+            </div>
+            <div class="information">
+                <div class="back_btn">
+                    <li><a class="fa fa-chevron-left" onclick="window.history.go(-1)" style="display:none;"> </a></li>
+                </div>
+            </div>
+        </div>
+        <div class="autopagerize_page_element">
+            <div class="content">
+                <div class="post-page">
+                    <div class="post animated fadeInDown">
+
+                        <!-- TODO: 更新个人介绍网页 -->
+                        <!-- 个人介绍网页，静态网页随便写点东西就行了-->
+						<h2><div class="hitokoto">嘤嘤嘤</div></h2>
+						<b><div class="hitfrom"></div></b>
+
+                        <div class="post-content">
+                            <h3 id="我是谁"><a href="#我是谁" class="headerlink" title="我是谁"></a>我是谁</h3>
+							<p>我叫王栋，现在在山东师范大学读研，专业为计算机技术，平时对一些东西保持好奇心，但是又有些三分热度。有时候想把一些事情做好却能力不够，追求完美但最后只能敷衍了事，比如你所看到的这个页面只是一个静态页面，而前两个页面是通过hexo模板生成的。
+                            <p>我曾经想成为那种腹有诗书、温文尔雅的文艺青年，逐渐发现咱这高考语文拖后腿的水平不足以实现这个梦想，学了几天摄影也没什么作品，现在在朝着中二少年转变<del>毕竟中二起来容易太多了</del>，最喜欢B站Up主水无月菌。</p>
+							
+							<h3>这个Blog是干嘛的</h3>
+                            <p>这是我个人的博客，应该会不定期的更新一些想法<del> 我也不知道我有没有恒心写下去 </del>，或者有关我个人近期学习的一些东西，或者是毫无意义但是我就是想写出来的东西。</p>
+                           
+							<h3>这个Blog怎么搭建的</h3>
+                            <p><a href="https://hexo.io/">Hexo</a>是一款基于Node.js的静态博客框架，此博客基于Hexo实现的，改进自<a href="https://github.com/Ben02/hexo-theme-Anatole">Ben Wong</a>。
+							<br/>用到了一些个人感觉比较炫酷的东西，值得记录一下:
+							<li>评论区实现: 评论数据的云存储使用<a href="https://valine.js.org/">valine</a>实现，这是一款快速、简洁且高效的无后端评论系统，cool!</li>
+							<li>假如你刷新一下页面，会发现最上面的名言变了，这是用<a href="https://hitokoto.cn/">一言</a>实现的，有时会蹦出一些比较中二的句子。</li>
+							<li>相信炫酷的事情即将发生</li>
+							<p>
+							
+							<h3>个人技能树</h3>
+							<p>很多东西不能说是精通,只是称得上略懂略懂：
+							<li><b>Python:</b> python入门语法当然是会的，能用python解决一些实际问题，调用sci-kit做一些数据分析也是可以的。</li>
+							<li><b>Java: </b>调用Java的Spring boot框架实现web后端开发，Java巅峰是大三时实现的书籍管理系统，实现了增删查改，权限控制，在异常处理上做的比较好。</li>
+							<li><b>数据库: </b>同上，基本的SQL调用和事务，触发器等还是掌握的，做数据库题就算了。</li>
+							<li><b>Web: </b>Html css Js看得懂,但不会写,只能调框架实现，譬如Vue，写过几个网站。</li>
+							<li><b>Linux: </b>研究不深，会使用常用的命令以及简单的权限控制。</li>
+							<li><b>matlab: </b>类比其他语言会写一些代码，平时学习需要用到matlab toolbox，这个是最近刚学的。</li>
+							<li><b>others: </b>还会用8种语言写Hello World哈哈，希望技能书逐渐丰富起来。</li>
+						  </p>
+							<h3>Qes</h3>
+                            <p>如果您对我的博客，或者我个人有任何问题或单纯的想认识一下我，请致电我的<a href="mailto:gongtongwei@gmail.com">邮箱</a>，也可以在评论区留下您的精彩评论。</p>
+                        </div>
+                        <div class="post-footer">
+                            <div class="meta">
+                                <div class="info"><span></span></div>
+                            </div>
+                        </div>
+                    </div>
+                    <script src="/js/visitors.js"></script><a id="comments"></a>
+                    <!-- 尝试调用评论栏  -->
+                    <!-- 评论栏，没调用好 -->
+                    <div id="vcomments" style="margin:0 30px;"></div>
+                    <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+                    <script src="//cdn.jsdelivr.net/gh/xcss/valine@latest/dist/Valine.min.js"></script>
+                    <script>
+                        var valine = new Valine({
+                            el: '#vcomments',
+                            // leanCloud app id & key
+                            app_id: 'WhMbDnysmoUsvuwwcVsbbMzI-gzGzoHsz',
+                            app_key: '8kGxneBiHdCHPVNPRLaw2aO2',
+                            // 默认填充文字
+                            placeholder: '如果您有问题,欢迎评论,请填写正确的联系方式≧◉◡◉≦',
+                            // 当前文章的路径,使用默认值即可
+                            path: window.location.pathname,
+                            serverURLs: '',
+                            // 是否启用文章阅读统计
+                            visitor: true,
+                            // 是否记录评论者的IP
+                            recordIP: true,
+                            // 头像展示方式,retro为八位像素复古头像 https://valine.js.org/avatar.html
+                            avatar: 'retro'
+                            // https://valine.js.org/emoji.html 自定义表情包,实现基本功能后再考虑
+							// 最好写逻辑检测是否填写昵称以及邮箱.
+                        })
+                    </script>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="/js/jquery-migrate-1.2.1.min.js"></script>
+    <script src="/js/jquery.appear.js"></script>
+    <script src="/js/add-bookmark.js"></script>
+	<script>
+	$.get("https://v1.hitokoto.cn/?c=a&c=b&c=c",function(data,status){
+		if (status == 'success'){
+			$('.hitokoto').text('  '+data.hitokoto);
+			$('.hitfrom').text('——'+data.from);
+		}else{
+			$('.hitokoto').text('获取出错！');
+		}
+	});
+	</script>
+	<style type="text/css">
+		.hitokoto {
+		}
+		.hitfrom{
+			padding: 20px;
+			text-align: right;
+			padding-top:0;
+		}
+	</style>
+</body>
+
+</html>
