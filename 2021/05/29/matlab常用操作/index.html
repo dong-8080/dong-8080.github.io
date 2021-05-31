@@ -1,0 +1,64 @@
+<!DOCTYPE html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="X-UA-Compatible" content="IE=edge"><meta name="author" content="wd"><title>matlab笔记 · Dong</title><meta name="description" content="who 查看工作区
+clear 清除工作区内容，也可clear name清除某个变量
+clc 清除命令行窗口
+save filename.mat 将工作区的内容保存在当前工作文件夹中的mat压缩文件中
+load filename.mat 将mat文件中的数据还原到工作区
+help ‘cmd’ 打开c"><meta name="keywords" content="wd, dong, dong-8080, dong1024"><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport"><meta content="yes" name="apple-mobile-web-app-capable"><meta content="black" name="apple-mobile-web-app-status-bar-style"><meta content="telephone=no" name="format-detection"><meta name="renderer" content="webkit"><link rel="stylesheet" href="/css/style.css"><link rel="stylesheet" href="/css/blog_basic.css"><link rel="stylesheet" href="/css/font-awesome.min.css"><link rel="alternate" type="application/atom+xml" title="ATOM 1.0" href="/atom.xml"><script src="/js/jquery.js"></script><meta name="generator" content="Hexo 5.4.0"></head><body><div class="sidebar animated fadeInDown"><div class="logo-title"><div class="title"><img src="/images/logo@2x.png" style="width:127px;"><h3 title=""><a href="/">Dong</a></h3><div class="description"><p><b>人若志趣不远，心不在焉，虽学不成。</b></p></div></div></div><ul class="social-links"><li><a target="_blank" rel="noopener" href="https://github.com/dong-8080"><i class="fa fa-github"></i></a></li><li><a href="mailto:dong1024mail@163.com"><i class="fa fa-envelope"></i></a></li></ul><div class="footer"><div class="p"> <span>© 2017 - 2021 </span><i class="fa fa-star"></i><span> wd</span></div><div class="by_farbox"><span>Powered by </span><a href="https://hexo.io/zh-cn/" target="_blank">Hexo </a><span> & </span><a href="https://github.com/mrcore/hexo-theme-Anatole-Core" target="_blank">Anatole-Core  </a></div><div class="beian"><a href="http://www.beian.miit.gov.cn/" target="_blank">粤ICP备15011643号</a><span style="height:10px;margin-left: 10px;">|</span><img src="/images/gongan.png" style="height:10px;margin-left: 10px;position: relative;top: 1px;"><span style="margin-left: 2px;">粤公网安备 44030402003967号</span></div></div></div><div class="main"><div class="page-top animated fadeInDown"><div class="nav"><li><a href="/">首页</a></li><li><a href="/archives">归档</a></li><li><a href="/about">关于</a></li><li><a href="/guestbook">留言</a></li></div><div class="information"><div class="back_btn"><li><a class="fa fa-chevron-left" onclick="window.history.go(-1)"> </a></li></div></div></div><div class="autopagerize_page_element"><div class="content"><div class="post-page"><div class="post animated fadeInDown"><div class="post-title"><h3><a>matlab笔记</a></h3></div><div class="post-content"><p>who 查看工作区</p>
+<p>clear 清除工作区内容，也可clear name清除某个变量</p>
+<p>clc 清除命令行窗口</p>
+<p>save filename.mat 将工作区的内容保存在当前工作文件夹中的mat压缩文件中</p>
+<p>load filename.mat 将mat文件中的数据还原到工作区</p>
+<p>help ‘cmd’ 打开cmd的帮助文档</p>
+<p>… 输入长语句时换行</p>
+<p>函数</p>
+<p>num2str 数值转化为字符串</p>
+<p>disp 显示变量的值</p>
+<p>rand 随机生成数据</p>
+<p>randn 随机生成正态分布数据</p>
+<p>绘图</p>
+<p>为第一幅绘图定义的标题和标签不再被用于当前的图窗窗口中。默认情况下，每次调用绘图函数、重置坐标区及其他元素以准备新绘图时，MATLAB® 都会清除图窗。</p>
+<p>要将绘图添加到现有图窗中，请使用 <code>hold on</code>。在使用 <code>hold off</code> 或关闭窗口之前，当前图窗窗口中会显示所有绘图。</p>
+<figure class="highlight matlab"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">&gt;&gt; x = <span class="number">0</span>:<span class="built_in">pi</span>/<span class="number">100</span>:<span class="number">2</span>*<span class="built_in">pi</span>;</span><br><span class="line">&gt;&gt; y = <span class="built_in">sin</span>(x);</span><br><span class="line">&gt;&gt; z = <span class="built_in">cos</span>(x);</span><br><span class="line">&gt;&gt; <span class="built_in">plot</span>(x, y )</span><br><span class="line">&gt;&gt; <span class="built_in">hold</span> on</span><br><span class="line">&gt;&gt; <span class="built_in">plot</span>(x, z, <span class="string">&#x27;r--&#x27;</span>)</span><br><span class="line">&gt;&gt; <span class="built_in">legend</span>(<span class="string">&#x27;sin&#x27;</span>, <span class="string">&#x27;cos&#x27;</span>)</span><br><span class="line">&gt;&gt; <span class="built_in">hold</span> off</span><br></pre></td></tr></table></figure>
+
+
+
+<p>一些专属操作</p>
+<p>串联 连接小矩阵以便形成更大矩阵的过程，如<code>B = [A  A+32; A+48  A+16]</code></p>
+<p>删除行列使用[]  如删除第二列数据<code>X(:,2) = []</code></p>
+<p>find 找到符合条件的索引，如<code>k = find(isprime(A))&#39;</code></p>
+<h3 id="获取文件夹下的所有文件名"><a href="#获取文件夹下的所有文件名" class="headerlink" title="获取文件夹下的所有文件名"></a>获取文件夹下的所有文件名</h3><figure class="highlight matlab"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&gt;&gt; dirs = dir([<span class="string">&#x27;C:\Users\Administrator\Desktop\data3\&#x27; &#x27;</span>*.nii&#x27;]);</span><br><span class="line">&gt;&gt; dircell = struct2cell(dirs);</span><br><span class="line">&gt;&gt; filenames = dircell(<span class="number">1</span>,:);</span><br></pre></td></tr></table></figure>
+
+<p>字符串拼接为串联操作，即</p>
+<figure class="highlight matlab"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[str1 str2]</span><br></pre></td></tr></table></figure>
+
+
+
+<h3 id="matlab函数"><a href="#matlab函数" class="headerlink" title="matlab函数"></a>matlab函数</h3><p>创建一个函数，函数文件名称为<code>fact</code></p>
+<figure class="highlight matlab"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">f</span> = <span class="title">fact</span><span class="params">(n)</span></span></span><br><span class="line">    f = prod(<span class="number">1</span>:n);</span><br><span class="line"><span class="keyword">end</span></span><br></pre></td></tr></table></figure>
+
+<p>matlab 中函数定义语法如下：</p>
+<figure class="highlight matlab"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="params">[输出参数...]</span> = 函数名称<span class="params">([输入参数...])</span></span></span><br><span class="line">	函数体;</span><br><span class="line"><span class="keyword">end</span></span><br></pre></td></tr></table></figure>
+
+<p>其中：</p>
+<ul>
+<li><p>输出参数可选，若函数没有输出可以忽略，如<code>function myFunction(x)</code>，也可以使用空的方括号<code>function [] = myFunction(x)</code>；</p>
+</li>
+<li><p>函数名称：函数文件及函数文件内的第一个函数使用相同的名称，这样在文件外部可以方便的调用该函数</p>
+</li>
+</ul>
+<p>从 R2016b 开始，用于存储函数的另一个选项是将函数包含在脚本文件的末尾</p>
+<figure class="highlight matlab"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">x = <span class="number">3</span>;</span><br><span class="line">y = <span class="number">2</span>;</span><br><span class="line">z = perm(x,y)</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">p</span> = <span class="title">perm</span><span class="params">(n,r)</span></span></span><br><span class="line">    p = fact(n)*fact(n-r);</span><br><span class="line"><span class="keyword">end</span></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">f</span> = <span class="title">fact</span><span class="params">(n)</span></span></span><br><span class="line">    f = prod(<span class="number">1</span>:n);</span><br><span class="line"><span class="keyword">end</span></span><br></pre></td></tr></table></figure>
+
+</div><div class="post-footer"><div class="meta"><div class="info"><i class="fa fa-sun-o"></i><span class="date">2021-05-29</span><i class="fa fa-tag"></i><span class="leancloud_visitors"></span></div></div></div></div><div class="share"><div class="evernote"><a class="fa fa-bookmark" href="" onclick="javascript:join_favorite()" ref="sidebar"></a></div><div class="weibo"><a class="fa fa-weibo" href="javascript:void((function(s,d,e){try{}catch(e){}var f='http://service.weibo.com/share/share.php?',u=d.location.href,p=['url=',e(u),'&amp;title=',e(d.title),'&amp;appkey=2924220432'].join('');function a(){if(!window.open([f,p].join(''),'mb',['toolbar=0,status=0,resizable=1,width=620,height=450,left=',(s.width-620)/2,',top=',(s.height-450)/2].join('')))u.href=[f,p].join('');};if(/Firefox/.test(navigator.userAgent)){setTimeout(a,0)}else{a()}})(screen,document,encodeURIComponent));"></a></div><div class="twitter"><a class="fa fa-twitter" target="_blank" rel="noopener" href="http://twitter.com/home?status=,http://example.com/2021/05/29/matlab常用操作/,Dong,matlab笔记,;"></a></div></div><div class="pagination"><ul class="clearfix"><li class="pre pagbuttons"><a class="btn" role="navigation" href="/2021/05/29/python/" title="python基础语法">上一篇</a></li><li class="next pagbuttons"><a class="btn" role="navigation" href="/2021/05/29/Python%E7%88%AC%E8%99%AB/" title="Python爬虫笔记">下一篇</a></li></ul></div><script src="/js/visitors.js"></script><a id="comments"></a><div id="vcomments" style="margin:0 30px;"></div><script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script><script src="//cdn.jsdelivr.net/gh/xcss/valine@latest/dist/Valine.min.js"></script><script>var valine = new Valine({
+  el:'#vcomments',
+  notify:false || false, 
+  verify:false|| false, 
+  app_id:'WhMbDnysmoUsvuwwcVsbbMzI-gzGzoHsz',
+  app_key:'8kGxneBiHdCHPVNPRLaw2aO2',
+  placeholder:'如果您有问题,欢迎评论,请填写正确的联系方式≧◉◡◉≦',
+  path: window.location.pathname,
+  serverURLs: '',
+  visitor:true,
+  recordIP:true,
+  avatar:'retro'
+})</script></div></div></div></div><script src="/js/jquery-migrate-1.2.1.min.js"></script><script src="/js/jquery.appear.js"></script><script src="/js/add-bookmark.js"></script><script src="/js/baidu-tongji.js"></script></body></html>
